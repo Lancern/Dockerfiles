@@ -6,4 +6,4 @@ WORKDIR /llvm-build
 
 RUN cmake -G Ninja -DCMAKE_BUILD_TYPE=Release /llvm && \
     cmake --build . && \
-    cmake --install .
+    cmake --build . --target install 
