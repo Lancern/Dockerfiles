@@ -1,4 +1,4 @@
-FROM lancern/cxxdev:debian-stretch-slim
+FROM lancern/cxxdev:stretch
 ARG LLVM_VER
 WORKDIR /
 

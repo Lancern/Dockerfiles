@@ -1,5 +1,5 @@
-FROM lancern/llvm-src:debian-stretch-slim AS llvm-src
-FROM lancern/cxxdev:debian-stretch-slim
+FROM lancern/llvm-src:stretch AS llvm-src
+FROM lancern/cxxdev:stretchj
 COPY --from=llvm-src /llvm /llvm
 WORKDIR /llvm-build
 
