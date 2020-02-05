@@ -1,5 +1,5 @@
 FROM lancern/llvm-src:stretch AS llvm-src
-FROM lancern/cxxdev:stretchj
+FROM lancern/cxxdev:stretch
 COPY --from=llvm-src /llvm /llvm
 WORKDIR /llvm-build
 
